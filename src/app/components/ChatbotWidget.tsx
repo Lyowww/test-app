@@ -12,13 +12,7 @@ export default function ChatbotWidget() {
       data-width="300px"
       data-height="400px"
       strategy="afterInteractive"
-      onLoad={() => {
-        const script = document.createElement("script");
-        script.innerHTML = `
-          window.CHAT_URL = "https://moby.host/app/hAW9B";
-        `;
-        document.body.appendChild(script);
-      }}
+      data-chat_url="https://moby.host/app/hAW9B"
     />
   );
 }
