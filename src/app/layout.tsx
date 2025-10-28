@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         {children}
         <Script 
-          src="https://charbot-mobi.vercel.app/chatbot-widget.js" 
+          src="https://charbot-mobi.vercel.app/chatbot-widget.js" chat_url="https://moby.host/app/hAW9B"
         />
       </body>
     </html>
