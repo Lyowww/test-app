@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
+import ChatbotWidget from "./components/ChatbotWidget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,17 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <Script 
-          src="https://charbot-mobi.vercel.app/chatbot-widget.js"
-          strategy="afterInteractive"
-          onLoad={() => {
-            const script = document.createElement("script");
-            script.innerHTML = `
-              window.CHAT_URL = "https://moby.host/app/hAW9B";
-            `;
-            document.body.appendChild(script);
-          }}
-        />
+        <ChatbotWidget />
       </body>
     </html>
   );
