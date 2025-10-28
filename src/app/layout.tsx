@@ -30,7 +30,7 @@ export default function RootLayout({
         {children}
         <script
           dangerouslySetInnerHTML={{
-            __html: `<script src="https://charbot-mobi.vercel.app/chatbot-widget.js" chat_url="https://moby.host/app/hAW9B"></script>`,
+            __html: `<script src="https://charbot-mobi.vercel.app/chatbot-widget.js" chat_url="https://moby.host/app/hAW9B"/>`,
           }}
         >
           </script>
